@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let record=[]; //to store result
+        let index=0;
+
+        function saverecord(w,l,r){
+            record[index]={
+                width,
+                length, 
+                result
+            };
+            index++;
+        }
+
+        function calcArea(width,length){
+            let calc=width * length;
+            let result=calc+" sqft";
+            saverecord(width,length,result)
+            return result;
+        }
+
+        // exchangerate
+        let rates={
+            usd:1636,
+            eur:1933,
+            sgd:1208
+        };
+
+        function exchangetommk(amount,currencies){
+            let calc = amount * rates[currencies];
+            let result=calc+"mmk";
+            return result    
+        }
+        function exchangefrommmk(amount,currencies){
+            let calc=amount/rates[currencies];
+            let result=calc+currencies
+            return result;
+        }
+
+        // fruitprice
+        let fruitprice={
+            orange:100,
+            mango:250,
+            apple:70
+        }
+
+        function caltax(amount,percentage=5){
+            return (amount*percentage)/100;
+        }
+
+        function calcost(quantity,fruit){
+            calc=fruitprice[fruit]*quantity;
+            result=calc+"mmk"
+            return {
+                name :fruit,
+                unitprice:fruitprice[fruit],
+                quantity:quantity,
+                cost:calc,
+                tax:caltax(calc),
+                total:calc+caltax(calc)
+            };
+        }
+        
+
+    </script>
+</body> 
+</html>

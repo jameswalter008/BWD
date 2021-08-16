@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .btn-primary{
+        background-color: skyblue;
+        border: 2px solid skyblue;
+        color: white;
+    }
+    .btn-primary:active{
+        background-color: rgb(11, 87, 97);
+        border-color: rgb(11, 87, 97);
+    }
+    .btn-secondary{
+        background-color: rgb(255, 210, 9);
+        border: 2px solid rgb(255, 210, 9);
+        color: white;
+    }
+    .btn-secondary:active{
+        background-color: rgb(97, 91, 11);
+        border-color: rgb(97, 91, 11)
+    }
+    .outline-btn{
+        background-color: rgb(255, 255, 255);
+        color:black;
+        border: 2px solid black;
+    }
+    .outline-btn:active{
+        background-color: rgb(92, 92, 92);
+        color: white;
+    }   
+</style>
+<body>
+    <button class="btn btn-primary">Normal Button</button>
+    <a class="btn btn-primary" href="#">Tag button</a>
+
+    <button class="btn btn-secondary">secondary btn</button>
+    <hr>
+
+    <button class="btn outline-btn">Outline button</button>
+</body>
+</html>

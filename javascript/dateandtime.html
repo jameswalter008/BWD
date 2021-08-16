@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d=new Date();
+        console.log(d)
+        // months start counting from 0
+
+        // console.log(d.getHours()+":"+d.getMinutes())
+        // console.log(`${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`)
+
+        // d.toString()
+        // d.toDateString()
+
+        // let currenthour=d.getHours();
+        // d.setHours(currenthour+300);
+        // console.log(d)
+
+        // 50 hours lesson to study 2 hr per day
+        // when will u finish all the lesson?
+        let totallessonhr=50;
+        let onedaystudy=2;
+        let finishallthelesson=totallessonhr/onedaystudy;
+
+        d.setDate(d.getDate()+finishallthelesson)
+
+        console.log(d)
+    </script>
+</body>
+</html>

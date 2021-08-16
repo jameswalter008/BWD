@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+       font-family: sans-serif;
+   }
+
+   table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+    thead{
+        background-color: rgb(72, 143, 224);
+        color: white;
+    }
+    tr{
+        border-bottom: 2px solid;
+    }
+    tbody tr:hover{
+        background-color: #eee;
+    }
+    td,th{
+        /* border:1px solid black; */
+        padding: 10px;
+    }
+    /* child selector */
+    thead th{
+        text-align: left;
+    }
+    tbody tr td:first-child{
+        background-color:turquoise;
+        color: white;
+    }
+    td:first-child{
+        width:10px
+    }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Course</th>
+                <th>Fee</th>
+                <th>Discount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>BWD</td>
+                <td>Free</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SWD</td>
+                <td>20000Ks</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Web Dev</td>
+                <td>100000Ks</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Laravel</td>
+                <td>100000Ks</td>
+                <td>None</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

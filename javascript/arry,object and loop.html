@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>looparray</title>
+</head>
+<body>
+    <script>
+        let fruits=["apple","orange","grapes"];
+        let marks=[80,90,40];
+        let name={
+            "name":"aung khant moe",
+            "age":21,
+            "location":"Insein road,hlaing township"
+        };
+
+        // for(let i=0; i<fruits.length; i++){
+        //     console.log(fruits[i]);
+        // }
+
+        // let total=0
+        // for(let i=0; i<marks.length; i++)
+        // {
+        //     total+=marks[i]
+        //     console.log(marks[i])
+        // }
+        // console.log(`total: ${total}`);
+
+        // ES6 style for loop
+        // for (of) pull out arrays(works only with array)
+        // total=0
+        // for(x of marks)
+        // {
+        //     console.log(total+=x)
+        // }
+
+        // for (in) pull out indexes of array objects(works on both object and array)
+        for(x in marks)
+        {
+            console.log(x+"-"+fruits[x])
+        }
+        for(x in name)
+        {
+            console.log(x+'-'+name[x]);
+        }
+
+        // let and var error in for loop(do not give the same varaible because var can be called outside of the code block)
+        for(var i=1;i<5;i++)
+        {
+            console.log(i);
+        }
+        console.log(i)
+
+    </script>
+</body>
+</html>

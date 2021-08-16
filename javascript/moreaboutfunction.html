@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // global scope
+        let name="Aung Khant Moe"
+
+
+        // fun statement
+        function aa(){
+            return "function satement";
+        };
+
+        // fun expression
+        let run=function(){
+            return "this is a function without name(function expression)";
+        };
+        console.log(aa());
+        console.log(run());
+
+        // IIFE(Imediate invoke function experssion )
+        (function(){
+            console.log("This is IIFE");
+        })()
+
+
+        // invoke function within a function
+        function a(){
+            return "Aung Khant Moe"
+        };
+        function b(){
+            return a()+" "+"is Khat mite mite"
+        };
+        console.log(b());
+
+        //block scope
+        {
+            let x=2;
+            var y=10;
+        };
+        // localscope
+        function local(){
+            let j=10;
+            var g=12;
+        };
+
+        // hoisting
+        // allows variable and function to use even before their declarations
+        console.log(hv);
+        // console.log(hl);
+
+        var hv=7;
+        // let hl=21;
+    </script>
+</body>
+</html>

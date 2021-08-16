@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    .list-one{
+        list-style: square;
+    }
+    .list-two{
+        padding: 5px;
+        list-style-type: none;
+        border: 1px solid black;
+        /* width: 200px; */
+    }
+    .list-two li{
+        border: 1px solid black;
+        padding: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .list-two li:last-child{
+        margin-bottom: 0px;
+    }
+    .list-two li:hover,.list-two li.active{
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+    .list-three{
+        padding: 0px;
+    }
+    .list-three li{
+        background-color: #8b8b8b;
+        color: #ffffff;
+        list-style-type: none;
+        padding: 5px;
+        width: 200px;
+        margin-bottom: 5px;
+        border-left: 2px solid skyblue;
+        box-sizing: border-box;
+    }
+    .list-three li:hover{
+        border-left: 8px solid skyblue;
+        transition: 0.5s;
+    }
+</style>
+<body>
+    <ul class="list-one">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Strawberry</li>
+    </ul>
+    <ul class="list-two">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li class="active">Mango</li>
+        <li>Banana</li>
+        <li>Strawberry</li>
+    </ul>
+    <ul class="list-three">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Strawberry</li>
+    </ul>
+</body>
+</html>

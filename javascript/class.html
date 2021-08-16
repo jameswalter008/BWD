@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        // let myself={
+        //     // properties
+        //     "name":"aung khant moe",
+        //     "age":21,
+        //     "skill":"BWD",
+        //     // methods
+        //     teach(){
+        //         return this.name+"teach"+this.skill;
+        //     },
+        //     run=function()
+        //     {
+        //         return "running";
+        //     }
+        // }
+        class Myself{
+            // constructor
+
+            constructor(x,age,location){
+                this.name=x;
+                this.age=age;
+                this.location=location;
+            }
+            
+            // property
+            name="Aung Khant moe";
+            static age=21;//static means you can call without instantiate your chosen class to obj    
+            skill="bwd";
+
+
+            // method
+            learn(){
+                return this.name+"is a learner"; 
+            }
+            birthday(){
+                return "i am "+this.age;
+            }
+            address(){
+                return "i live in "+this.location;
+            }
+        }
+
+        // instantiate
+        let myself=new Myself("aungkhantmoe",21,"insein road,hlaing township");//instantiate to object(cls-->obj)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <script>
+        // for(statement1;statement2;statement3)
+        // statement1 is executed(onetime) before the execution of the code block
+        // state2 defines the condition for executing the code block
+        // state3 is executed (everytime) after the code block has been executed
+        for(let i=1;i<6;i++){
+            console.log("whats up"+i)
+        }
+        
+        let result=0;
+        for(let i=0;i<=5;i++){
+            result+=i;
+            console.log(i)
+        }
+        console.log("answer is: "+result)
+
+        for(let i=5;i<=10;i+=2){
+            console.log(i)
+        }
+
+        
+        for(let i=1;i<=10;i++){
+
+            if(i==7){
+                continue;
+            }
+
+            console.log(i)
+            // if(i==7)
+            // {break;}
+        }
+    </script>
+</body>
+</html>
